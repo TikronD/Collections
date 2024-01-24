@@ -1,22 +1,12 @@
-import { clearPreviewData } from "next/dist/server/api-utils";
+import { sql } from "@vercel/postgres";
 
-export default function Home() {
-  const collection = [
-    { name: "Bitoku", price: "45", extras: "insert", boughtNew: false },
-    {
-      name: "Villagers",
-      price: "50",
-      extras: "wooden coins, expansions",
-      boughtNew: false,
-    },
-    { name: "Apiary", price: "45", extras: "none", boughtNew: false },
-    { name: "Aquatica", price: "45", extras: "Cold Waters", boughtNew: false },
-  ];
+export default async function Home() {
+  const collection = await sql`SELECT * FROM collection`;
 
   return (
     <div>
-      <h2>Board Games</h2>
-      {collection.map((collection) => {
+      <h2>My Board Games</h2>
+      {collection.rows.map((collection) => {
         return (
           <div key={collection.name} className="post">
             <h4>{collection.name}</h4>
