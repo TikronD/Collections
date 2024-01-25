@@ -1,6 +1,6 @@
 header {
-  background-color: blueviolet;
-  color: white;
+  background: linear-gradient(to right, #8a2be2, #029807);
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,12 +8,17 @@ header {
   height: 15vh;
 }
 nav {
-  color: white;
+  color: whitesmoke;
   display: flex;
   gap: 5rem;
 }
 
 nav a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: rgb(202, 197, 197);
 }

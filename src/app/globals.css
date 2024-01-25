@@ -6,6 +6,7 @@ body {
   color: whitesmoke;
   gap: 1rem;
   margin: 0;
+  background: linear-gradient(to bottom, #5f9ea0, #4caf50);
 }
 
 main {

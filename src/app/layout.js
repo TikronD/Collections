@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-import Link from "next/link";
+
 const jontserrat = Montserrat({ subsets: ["latin"], weight: "100" });
 
 export const metadata = {

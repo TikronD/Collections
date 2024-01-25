@@ -15,6 +15,7 @@ export default async function Home({ searchParams }) {
     collection.rows.sort((a, b) => a.price - b.price);
   }
 
+  // Does not make sense for this specific topic, but wanted to leave it in for completion reasons
   // if (searchParams.sort === "reverse") {
   //   collection.rows.reverse();
   // }

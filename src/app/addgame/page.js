@@ -26,11 +26,11 @@ export default function AddGame() {
     <div>
       <h2>Add a Boardgame</h2>
       <form action={handleAddGame}>
-        <label htmlForm="game">Name:</label>
+        <label htmlFor="game">Name:</label>
         <input name="game" id="game" placeholder="Name of game" />
-        <label htmlForm="price">Purchase price:</label>
+        <label htmlFor="price">Purchase price:</label>
         <input name="price" id="price" placeholder="price paid" />
-        <label htmlForm="extras">Extras:</label>
+        <label htmlFor="extras">Extras:</label>
         <input name="extras" id="extras" placeholder="Sleeves, Insert, etc" />
         <label htmlFor="boughtnew">Bought New:</label>
         <div className="radiobtn">
