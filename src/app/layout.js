@@ -15,13 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jontserrat.className}>
         <Header />
-        <main>
-          <nav>
-            <Link href="/">Home</Link>
-            <Link href="./addgame">Add Game</Link>
-          </nav>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

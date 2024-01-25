@@ -1,0 +1,19 @@
+header {
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+nav {
+  color: white;
+  display: flex;
+  gap: 5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}

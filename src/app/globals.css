@@ -5,18 +5,12 @@ body {
   flex-direction: column;
   color: whitesmoke;
   gap: 1rem;
-  min-height: 100vh;
+  margin: 0;
 }
 
-nav {
-  color: white;
-  display: flex;
-  gap: 5rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+main {
+  padding: 2rem 7%;
+  min-height: 70vh;
 }
 
 .detail {
@@ -25,42 +19,6 @@ nav a {
   margin-bottom: 15px;
 }
 
-h4 {
-  margin: 0.5px;
-}
-.footer {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  height: 100px;
-}
-
 .post {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-form {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  color: whitesmoke;
-  gap: 1rem;
-  max-width: 400px;
-  margin: 0;
-}
-
-.radiobtn {
-  display: flex;
-  justify-content: row;
-  gap: 0.4rem;
-}
-
-form button {
-  font-size: 15px;
-  padding: 0.5rem;
-  background-color: #90dd93;
-  border-radius: 15px;
-  margin-left: 20px;
+  padding-top: 10px;
 }

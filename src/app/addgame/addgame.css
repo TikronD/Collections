@@ -1,0 +1,28 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.radiobtn {
+  display: flex;
+  justify-content: row;
+  gap: 0.4rem;
+}
+
+form button {
+  font-size: 15px;
+  padding: 0.5rem;
+  background-color: #90dd93;
+  border-radius: 15px;
+  margin-left: 20px;
+}
