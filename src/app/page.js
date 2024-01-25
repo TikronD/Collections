@@ -8,8 +8,8 @@ export default async function Home() {
       <h2>My Board Games</h2>
       {collection.rows.map((collection) => {
         return (
-          <div key={collection.name} className="post">
-            <h4>{collection.name}</h4>
+          <div key={collection.game} className="post">
+            <h4>{collection.game}</h4>
             <div className="detail">
               <p>Price: £{collection.price}</p>
               <p>Extras: {collection.extras}</p>
