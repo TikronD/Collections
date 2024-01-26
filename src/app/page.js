@@ -24,7 +24,7 @@ export default async function Home({ searchParams }) {
     <div>
       <h2>My Board Games</h2>
       <nav>
-        <Link href="/">Original</Link>
+        <Link href="/">Cronologically</Link>
         {/* <Link href="/?sort=reverse">Reverse</Link> */}
         <Link href={`/?sort=name`}>Sort A-Z</Link>
         <Link href={`/?sort=pricedec`}>Price High-Low</Link>
@@ -34,11 +34,13 @@ export default async function Home({ searchParams }) {
       {collection.rows.map((collection) => {
         return (
           <div key={collection.game} className="post">
-            <h4>{collection.game}</h4>
+            <Link href={`/message/${collection.id}`}>
+              <h4>{collection.game}</h4>
+            </Link>
             <div className="detail">
               <p>Price: £{collection.price}</p>
               <p>Extras: {collection.extras}</p>
-              <p>Bought: {collection.boughtNew ? "New" : "Used"}</p>
+              <p>Bought: {collection.boughtnew ? "New" : "Used"}</p>
             </div>
           </div>
         );

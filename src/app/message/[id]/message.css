@@ -27,3 +27,8 @@ form button {
   border-radius: 15px;
   margin-left: 20px;
 }
+
+.textbox {
+  height: 200px;
+  font-size: 12pt;
+}

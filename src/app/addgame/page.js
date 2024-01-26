@@ -3,6 +3,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import SaveGameButton from "@/components/SaveGameButton.js";
 import "./addgame.css";
+import Link from "next/link";
 
 export default function AddGame() {
   async function handleAddGame(formData) {
@@ -25,6 +26,10 @@ export default function AddGame() {
   return (
     <div>
       <h2>Add a Boardgame</h2>
+      <nav>
+        <Link href="/">Original</Link>
+      </nav>
+      <hr />
       <form action={handleAddGame}>
         <label htmlFor="game">Name:</label>
         <input name="game" id="game" placeholder="Name of game" />
@@ -49,7 +54,6 @@ export default function AddGame() {
           />
           <label htmlFor="boughtnew-false">No</label>
           <SaveGameButton />
-          {/* <button type="submit">Add Game</button> */}
         </div>
       </form>
     </div>
