@@ -41,7 +41,7 @@ export default async function AddMessage({ params }) {
         <input name="title" id="title" placeholder="Enter a topic" />
         {/* <label htmlFor="message">Message:</label>
         <input className="textbox" name="message" id="message" /> */}
-        <label for="message">Tell us how you heard about HubSpot:</label>
+        <label for="message"></label>
         <textarea
           id="message"
           name="message"
