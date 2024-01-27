@@ -24,8 +24,8 @@ export default async function Home({ searchParams }) {
     <div>
       <h2>My Board Games</h2>
       <nav>
-        <Link href="/">Cronologically</Link>
         {/* <Link href="/?sort=reverse">Reverse</Link> */}
+        <Link href="/">Cronologically</Link>
         <Link href={`/?sort=name`}>Sort A-Z</Link>
         <Link href={`/?sort=pricedec`}>Price High-Low</Link>
         <Link href={`/?sort=priceasc`}>Price Low-High</Link>
@@ -35,12 +35,14 @@ export default async function Home({ searchParams }) {
         return (
           <div key={collection.game} className="post">
             <Link href={`/message/${collection.id}`}>
-              <h4>{collection.game}</h4>
+              <nav>
+                <h2>{collection.game}</h2>
+              </nav>
             </Link>
             <div className="detail">
-              <p>Price: £{collection.price}</p>
-              <p>Extras: {collection.extras}</p>
-              <p>Bought: {collection.boughtnew ? "New" : "Used"}</p>
+              <h3>Price: £{collection.price}</h3>
+              <h3>Extras: {collection.extras}</h3>
+              <h3>Bought: {collection.boughtnew ? "New" : "Used"}</h3>
             </div>
           </div>
         );
